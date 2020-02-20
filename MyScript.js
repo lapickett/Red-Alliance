@@ -3,7 +3,21 @@ function refresh() {
 	console.log("Grabbing Value");
 	req.onreadystatechange = function () {
 		if (req.readyState == 4 && req.status == 200) {
-          		document.getElementById("demo").innerHTML = req.responseText;
+			var contents = req.responseText;
+			var tdata = contents.split("\n");
+			var i;
+			var points = [];
+			for (i=0; i<tdata.length; i++){
+				var p = tdata[i].split(" ");
+				points.push(p);
+			}
+			var j;
+			for (i=0; i<points.length; i++){
+				for (j=0; j<points[i].length; j++){
+					document.getElementById("demo"+str(i)+str(j)).innerHTML = points[i][j];
+				}
+          			
+			}
         	}
       	}
 	req.open("GET", 'Bridge.txt', true);

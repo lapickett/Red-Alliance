@@ -1,8 +1,8 @@
-f<html>
+<html>
 <head>
 	<title>This is title</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
 	<meta charset="utf-8" /> <!-- standard practice to declare character set of webpage-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery could be useful in the future 0.0-->
 </head>
 <body>
@@ -19,9 +19,6 @@ f<html>
 	<div id="container">
 		<div id="content">
 			<button type="button" id="button" onclick="init()">Refresh</button>
-			<script src="./MyScript.js"></script>
-			<script>init();</script>
-			<script src="./MyScript.js"></script>
 			<table style="width:100%">
 				<tr>
 					<th>Rank</th>
@@ -33,37 +30,24 @@ f<html>
 					<th>Win Rating</th>
 					<th>OPR Rating</th>
 				</tr>
-
-<?php
-$i=0;
-while($i<100){
-	$j=$i+1;
-	echo "<tr>".PHP_EOL;
-	echo "<td>".$j."</td>".PHP_EOL;
-	$number = "data_".$i."_0";
-	echo "<td id='".$number."'>hi</td>".PHP_EOL;
-	$number = "data_".$i."_1";
-	echo "<td id='".$number."'>hi</td>".PHP_EOL;
-	$number = "data_".$i."_2";
-	echo "<td id='".$number."'>hi</td>".PHP_EOL;
-	$number = "data_".$i."_3";
-	echo "<td id='".$number."'>hi</td>".PHP_EOL;
-	$number = "data_".$i."_4";
-	echo "<td id='".$number."'>hi</td>".PHP_EOL;
-	$number = "data_".$i."_5";
-	echo "<td id='".$number."'>hi</td>".PHP_EOL;
-	$number = "data_".$i."_6";
-	echo "<td id='".$number."'>hi</td>".PHP_EOL;
-	echo "</tr>".PHP_EOL;
-	$i+=1;
-}
-?>
-
+				<?php
+					for($i = 0; $i < 100; $i++){
+						$j=$i+1;
+						echo "<tr>\n<td>{$j}</td>\n";
+						echo "<td>{$j}</td>";
+						for($x = 0; $x <= 6; $x++){
+							$number = "data_{$i}_{$x}";
+							echo "<td id={$number}></td>\n";
+						}
+						echo "</tr>";
+					}
+				?>
 			</table>
-			
 		</div>
+		<script src="./js/Main.js"></script>
+		<script>init();</script>
 		<div id="footer">
-			Copyright &copy; 2020 Lucas Pickett.
+			Copyright &copy; 2020 The Red Alliance.
 		</div>
 	</div>
 </body>

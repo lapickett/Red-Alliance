@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>This is title</title>
+	<title>The Red Alliance Alpha</title>
 	<meta charset="utf-8" /> <!-- standard practice to declare character set of webpage-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -48,7 +48,6 @@
 					for($i = 0; $i < 100; $i++){
 						$j=$i+1;
 						echo "<tr>\n<td>{$j}</td>\n";
-						echo "<td>{$j}</td>";
 						for($x = 0; $x <= 6; $x++){
 							$number = "data_{$i}_{$x}";
 							echo "<td id={$number}></td>\n";

@@ -28,7 +28,7 @@ def rank(Array):                                                        #returns
 EventCodes = []
 Week = []
 
-loc = 'C:/Users/lapickett/PycharmProjects/RankingsFRC/EventCodes.xlsx'  #this is where event codes are stored, as well as the week of the event
+loc = 'D:\xampp\htdocs\RedAlliance\EventCodes.xlsx'  #this is where event codes are stored, as well as the week of the event
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)                                            #parse through the excel file
 sheet.cell_value(0, 2)

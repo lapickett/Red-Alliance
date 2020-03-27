@@ -13,10 +13,21 @@
 
 <body>
 	<nav class="nav bg-red">
-		<ul>
-			<span class="nav-title">The Red Alliance Alpha</span>
-			<li><a href="#">TBD</a></li>
-			<li><a href="#">TBD</a></li>
+		<ul class="nav-container">
+			<div class="nav-start">
+				<span class="nav-title">The Red Alliance Alpha</span>
+				<li class="nav-item hover"><a href="#">Rankings</a></li>
+				<li class="nav-item hover"><a href="#">Fantasy</a></li>
+				<li class="nav-item hover"><a href="#">Lab</a></li>
+			</div>
+			<div class="nav-right">
+				<li class="nav-item">
+					<form action="" class="nav-search">
+						<button type="submit">Search</button>
+						<input type="search" name="" id="">
+					</form>
+				</li>
+			</div>
 		</ul>
 	</nav>
 	<div id="container">

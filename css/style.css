@@ -1,11 +1,17 @@
 * {
 	font-size: 18px; /* Default font size */
+	padding: 0;
 }
 
 body {
 	background-color: #EEE;
 	font-family: Futura Md BT, Arial, sans-serif;
 	margin: 0;
+}
+
+container-fluid {
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 a {
@@ -57,31 +63,6 @@ tr:nth-child(even) {
 	text-align: right;
 }
 
-.navbar {
-	overflow: hidden;
-	background-color: red;
-	position: fixed;
-	top: 0; 
-	width: 100%; 
-}
-
-/* Links inside the navbar */
-.navbar a {
-	float: left;
-	display: block;
-	color: white;
-	text-align: center;
-	/* font-size: 24px; */
-	padding: 14px 20px;
-	text-decoration: none;
-}
-
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #8e1600;
-}
-
-
 img{
 	height: auto;
 	width: 25px;
@@ -90,4 +71,25 @@ img{
 #image{
 	float: left;
 	padding: 10px 4px 0px 7%;
+}
+
+.bg-red {
+	background-color: red!important;
+	transition: background-color .2s;
+}
+
+.button {
+	display: block;
+	border-radius: 5%;
+	border: none;
+	color: white;
+	padding: 5px;
+	border-radius: 7%;
+	background-color: red;
+	transition: background-color .2s;
+}
+
+.button:hover {
+	background-color: rgb(197, 0, 0);
+	transition: background-color .2s;
 }

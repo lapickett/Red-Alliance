@@ -1,24 +1,38 @@
 <html>
+
 <head>
-	<title>This is title</title>
+	<title>The Red Alliance Alpha</title>
 	<meta charset="utf-8" /> <!-- standard practice to declare character set of webpage-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery could be useful in the future 0.0-->
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- jQuery could be useful in the future 0.0-->
 </head>
+
 <body>
-	<div class="navbar">
-			<div id=image>
-				<img src="Lamp.png" alt="Italian Trulli">
+	<nav class="nav bg-red">
+		<ul class="nav-container">
+			<div class="nav-start">
+				<span class="nav-title">The Red Alliance Alpha</span>
+				<li class="nav-item hover"><a href="#">Rankings</a></li>
+				<li class="nav-item hover"><a href="#">Fantasy</a></li>
+				<li class="nav-item hover"><a href="#">Lab</a></li>
 			</div>
-			<div id=links>
-				<a href="#home">The Red Alliance Alpha</a>
-				<a href="#tbd1">TBD</a>
-				<a href="#tbd2">TBD</a>
+			<div class="nav-right">
+				<li class="nav-item">
+					<form action="" class="nav-search">
+						<button type="submit">Search</button>
+						<input type="search" name="" id="">
+					</form>
+				</li>
 			</div>
-	</div>
+		</ul>
+	</nav>
 	<div id="container">
 		<div id="content">
-			<button type="button" id="button" onclick="init()">Refresh</button>
+			<button type="button" class="button" onclick="init()">Refresh</button>
 			<table style="width:100%">
 				<tr>
 					<th>Rank</th>
@@ -34,7 +48,6 @@
 					for($i = 0; $i < 100; $i++){
 						$j=$i+1;
 						echo "<tr>\n<td>{$j}</td>\n";
-						echo "<td>{$j}</td>";
 						for($x = 0; $x <= 6; $x++){
 							$number = "data_{$i}_{$x}";
 							echo "<td id={$number}></td>\n";
@@ -50,5 +63,7 @@
 			Copyright &copy; 2020 The Red Alliance.
 		</div>
 	</div>
+	</div>
 </body>
+
 </html>

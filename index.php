@@ -5,7 +5,7 @@
 	<meta charset="utf-8" /> <!-- standard practice to declare character set of webpage-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/rankStyle.css" />
 	<link rel="stylesheet" type="text/css" href="css/navigation.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- jQuery could be useful in the future 0.0-->
@@ -16,16 +16,16 @@
 		<ul class="nav-container">
 			<div class="nav-start">
 				<span class="nav-title">The Red Alliance Alpha</span>
-				<li class="nav-item hover"><a href="#">Rankings</a></li>
-				<li class="nav-item hover"><a href="#">Fantasy</a></li>
-				<li class="nav-item hover"><a href="#">Lab</a></li>
+				<li class="nav-item hover"><a href="Team.php">Rankings</a></li>
+				<li class="nav-item hover"><a href="#Fantasy">Fantasy</a></li>
+				<li class="nav-item hover"><a href="#Lab">Lab</a></li>
 			</div>
 			<div class="nav-right">
 				<li class="nav-item">
-					<form action="" class="nav-search">
-						<button type="submit">Search</button>
-						<input type="search" name="" id="">
-					</form>
+					<form autocomplete="off" method="POST" action="" class="nav-search">
+						<button class="searchSubmit">Search</button>
+						<input type="search" class="teamSearch" name="" id="">  
+					</form>  
 				</li>
 			</div>
 		</ul>

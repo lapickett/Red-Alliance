@@ -1,0 +1,59 @@
+* {
+	font-size: 18px; /* Default font size */
+}
+
+body {
+	background-color: #EEE;
+	font-family: Futura Md BT, Arial, sans-serif;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+
+h1, h2, h3{
+	margin: 0;
+}
+
+#container{
+	background-color: white;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content{
+	padding: 50 50 50 50px;
+	width: 60% px;
+	float: center;
+}
+
+table {
+    border: 0px solid #CCC;
+    border-collapse: collapse;
+}
+
+th, td{
+	border: none;
+	padding: 15px;
+	font-size: 20px;
+}
+
+th{
+	text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#footer{
+	clear: both;
+	padding: 10px;
+	background-color: #999999;
+	color: white;
+	text-align: right;
+}
+

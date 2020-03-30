@@ -63,8 +63,13 @@ function refresh() {
 
 function init() {
 	refresh();
-
+	
 	//var some_var = self.setInterval(function () {
 	//	refresh()
 	//}, 1000);
 }
+
+$(".searchSubmit").click((e) => {
+    e.preventDefault();
+    $(".nav-search").prop('action', `Team.php?team=${$(".teamSearch").val()}`).submit();
+})

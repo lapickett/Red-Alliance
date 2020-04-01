@@ -206,3 +206,22 @@ while j<=100:                                                           #outputs
     i=0
     higher=Top
     Top=-99999
+j=0    
+TeamsJSON = {}
+while j<len(Teams):
+    TeamsJSON[str(Teams[j])] = []
+    TeamsJSON[str(Teams[j])].append({
+        'wins': str(matrixWin[j]),
+        'losses': str(matrixLoss[j]),
+        'rating': str(e[j]),
+        'r_pt_diff': str(c[j]),
+        'r_win_loss': str(d[j]),
+        'r_OPR': str(OPR[j])
+    })
+    j=j+1
+    # Serializing json
+json_object = json.dumps(TeamsJSON, indent=4)
+
+# Writing to sample.json
+with open("infoDump.json", "w") as outfile:
+    outfile.write(json_object)
